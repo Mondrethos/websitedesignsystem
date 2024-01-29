@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+body {
+  background-image: url(/resources/images/linen.png);
+  background-color: rgba(0, 0, 0, 0.932);
+}
+
+* {
+  color: white;
+}
+
+.oswald {
+  font-family: Oswald, sans-serif;
+}
+
+.singleday {
+  font-family: "Single Day", cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+.bg {
+  background-color: rgb(31, 30, 30);
+  border: 1px rgb(31, 30, 30) solid;
+  border-radius: 20px;
+}
+
+#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flexbox h2 {
+  padding-left: 10px;
+}
+
+#colors,
+#fonts {
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+
+#styles {
+  flex-basis: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#styles h2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.liheader {
+  list-style-type: none;
+}
+
+.size30 {
+  font-size: 30px;
+}
+
+#styles ul {
+  display: grid;
+  flex-basis: 30%;
+  justify-content: center;
+}
+
+#colors h2,
+#fonts h2 {
+  width: 100%;
+}
+
+#fonts {
+  display: block;
+}
+
+.fonttitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #9a031e;
+}
+
+.colorbox {
+  height: 100px;
+  width: 30%;
+  margin: 8px auto;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+/* Colorboxes */
+
+.yellow {
+  background-color: #eeba0b;
+}
+
+.carmine {
+  background-color: #9a031e;
+}
+
+.cerulean {
+  background-color: #0075a2;
+}
+
+.jasper {
+  background-color: #db5a42;
+}
+
+.gunmetal {
+  background-color: #253031;
+}
+
+.jade {
+  background-color: #0dab76;
+}
+
+.amethyst {
+  background-color: #9966cc;
+}
+
+.sage {
+  background-color: #c2b97f;
+}
+
+.flamingo {
+  background-color: #ff5d8f;
+}
+
+#colors ul {
+  text-align: center;
+  padding: 0 100px;
+}
+
+#colors ul li {
+  text-align: left;
+}
+
+.yellownote {
+  color: #eeba0b;
+}
+/* Responsive Flexbox on 600px screens or smaller */
+@media only screen and (max-width: 600px) {
+  #flexbox {
+    display: block;
+  }
+  #colorbox {
+    width: 100%;
+  }
+  #colors,
+  #fonts {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #colors ul {
+    padding: 0 20px;
+  }
+
+  .colorbox {
+    margin: 5px auto;
+  }
+
+  #styles {
+    display: block;
+  }
+
+  #styles h2 {
+    padding-right: 60px;
+  }
+}
